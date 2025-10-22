@@ -1,0 +1,7 @@
+{
+  "displayName": "Éditeur VMX",
+  "description": "Extension Visual Studio Code pour éditeur les fichiers VMX de VMware Workstation.",
+  "cmd.insertBlock.title": "Editeur VMX: Insérer un bloc",
+  "cmd.insertTimestamp.title": "Editeur VMX: Insérer un horodatage pour la sauvegarde."
+
+}

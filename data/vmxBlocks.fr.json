@@ -1,0 +1,116 @@
+{
+  "TPM Block": {
+    "prefix": "tpm",
+    "body": [
+      "# TPM configuration",
+      "firmware = \"efi\"",
+      "encrypt = \"TRUE\"",
+      "security.tpm.enabled = \"TRUE\"",
+      "security.tpm.version = \"2.0\""
+    ],
+    "description": "Bloc TPM"
+  },
+  "Network NAT Block": {
+    "prefix": "networknat",
+    "body": [
+      "# Carte réseau NAT",
+      "ethernet0.present = \"TRUE\"",
+      "ethernet0.connectionType = \"nat\"",
+      "ethernet0.virtualDev = \"e1000e\"",
+      "ethernet0.startConnected = \"TRUE\""
+    ],
+    "description": "Bloc réseau NAT"
+  },
+  "Network Bridge Block": {
+    "prefix": "networkbridge",
+    "body": [ 
+      "# Carte réseau Bridge",
+      "ethernet0.present = \"TRUE\"",
+      "ethernet0.connectionType = \"bridged\"",
+      "ethernet0.virtualDev = \"e1000e\"",
+      "ethernet0.startConnected = \"TRUE\""   
+          ],
+          "description": "Bloc réseau BRIDGE "
+  },
+  "Disque SCSI Block": {
+    "prefix": "disquescsi",
+    "body": [
+      "# Contrôleur SCSI",
+      "scsi0.present = \"TRUE\"",
+      "scsi0.virtualDev = \"lsilogic\"",
+      "scsi0:0.present = \"TRUE\"",
+      "scsi0:0.fileName = \"disk.vmdk\"",
+      "scsi0:0.deviceType = \"disk\""
+    ],
+    "description": "Bloc stockage SCSI"
+  },
+  "Disque SATA Block": {
+    "prefix": "disquesata",
+    "body": [
+      "# Contrôleur SATA et disque",
+      "sata0.present = \"TRUE\"",
+      "sata0:0.present = \"TRUE\"",
+      "sata0:0.fileName = \"disk.vmdk\"",
+      "sata0:0.deviceType = \"disk\""
+    ],
+    "description": "Bloc stockage SATA"
+  },
+  "Lecteur CD-ROM SATA Block": {
+    "prefix": "cdromsata", 
+    "body": [
+      "# Lecteur CD-ROM SATA",
+      "sata1.present = \"TRUE\"",
+      "sata1:1.present = \"TRUE\"",
+      "sata1:1.fileName = \"emptyCdrom\"",
+      "sata1:1.deviceType = \"cdrom-image\"" 
+    ],
+    "description": "Bloc CD-ROM SATA"
+  },
+	"Carte Son Block": {
+    "prefix": "carteson",
+    "body": [
+      "# Configuration son",
+      "sound.present = \"TRUE\"",
+      "sound.virtualDev = \"hdaudio\""
+    ],
+    "description": "Bloc carte son"
+  },
+	  "Carte Vidéo SVGA": {
+    "prefix": "videosvga",
+    "body": [
+      "# Configuration vidéo SVGA",
+      "svga.present = \"TRUE\"",
+      "mks.enable3d = \"TRUE\"",
+      "svga.vramSize = \"268435456\""
+    ], 
+    "description": "Bloc carte vidéo SVGA"
+    },
+    "BuG 3D": {
+    "prefix": "bug3d",
+    "body": [
+      "# Correction bug affichage 3D",
+      "mks.vk.gpuHeapSizeMB = \"0\""
+    ],
+    "description": "Bloc correction bug 3D"
+  },
+    "Log Configuration": {
+    "prefix": "logconfig",
+    "body": [
+      "# Configuration journalisation",
+      "log.fileName = \"vmware.log\"",
+      "logging = \"TRUE\""
+    ],
+    "description": "Bloc configuration journalisation"
+  },
+    "Keyboard Configuration": {
+    "prefix": "keyboardconfig",
+    "body": [
+      "# Configuration clavier",
+      "keyboard.typematicMinDelay = \"250000\"",
+      "keyboard.typematicRate = \"30000\""
+    ],
+    "description": "Bloc configuration clavier"
+  }
+
+
+}

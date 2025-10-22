@@ -1,0 +1,116 @@
+{
+  "TPM Block": {
+    "prefix": "tpm",
+    "body": [
+      "# TPM config",
+      "firmware = \"efi\"",
+      "encrypt = \"TRUE\"",
+      "security.tpm.enabled = \"TRUE\"",
+      "security.tpm.version = \"2.0\""
+    ],
+    "description": "TPM unit"
+  },
+  "Network NAT Block": {
+    "prefix": "networknat",
+    "body": [
+      "# Config NAT Network",
+      "ethernet0.present = \"TRUE\"",
+      "ethernet0.connectionType = \"nat\"",
+      "ethernet0.virtualDev = \"e1000e\"",
+      "ethernet0.startConnected = \"TRUE\""
+    ],
+    "description": "Unit NAT Network"
+  },
+  "Network Bridge Block": {
+    "prefix": "networkbridge",
+    "body": [ 
+      "# Carte Bridge Network",
+      "ethernet0.present = \"TRUE\"",
+      "ethernet0.connectionType = \"bridged\"",
+      "ethernet0.virtualDev = \"e1000e\"",
+      "ethernet0.startConnected = \"TRUE\""   
+          ],
+          "description": "Unit Bridge Network "
+  },
+  "Disque SCSI Block": {
+    "prefix": "diskscsi",
+    "body": [
+      "# SCSI Controller",
+      "scsi0.present = \"TRUE\"",
+      "scsi0.virtualDev = \"lsilogic\"",
+      "scsi0:0.present = \"TRUE\"",
+      "scsi0:0.fileName = \"disk.vmdk\"",
+      "scsi0:0.deviceType = \"disk\""
+    ],
+    "description": "Unit SCSI Storage"
+  },
+  "Disque SATA Block": {
+    "prefix": "disksata",
+    "body": [
+      "# SATA Controller and disk",
+      "sata0.present = \"TRUE\"",
+      "sata0:0.present = \"TRUE\"",
+      "sata0:0.fileName = \"disk.vmdk\"",
+      "sata0:0.deviceType = \"disk\""
+    ],
+    "description": "Unit SATA Storage"
+  },
+  "Lecteur CD-ROM SATA Block": {
+    "prefix": "cdromsata", 
+    "body": [
+      "# CD-ROM SATA",
+      "sata1.present = \"TRUE\"",
+      "sata1:1.present = \"TRUE\"",
+      "sata1:1.fileName = \"emptyCdrom\"",
+      "sata1:1.deviceType = \"cdrom-image\"" 
+    ],
+    "description": "Unit CD-ROM SATA"
+  },
+	"Carte Son Block": {
+    "prefix": "SoundCard",
+    "body": [
+      "# Sound Card Configuration",
+      "sound.present = \"TRUE\"",
+      "sound.virtualDev = \"hdaudio\""
+    ],
+    "description": "Unit Sound Card"
+  },
+	  "Carte Vidéo SVGA": {
+    "prefix": "videosvga",
+    "body": [
+      "# SVGA Graphic Card",
+      "svga.present = \"TRUE\"",
+      "mks.enable3d = \"TRUE\"",
+      "svga.vramSize = \"268435456\""
+    ], 
+    "description": "Unit SVGA Graphic Card"
+    },
+    "BuG 3D": {
+    "prefix": "bug3d",
+    "body": [
+      "# Correct 3D Bug",
+      "mks.vk.gpuHeapSizeMB = \"0\""
+    ],
+    "description": "Unit To Correct 3D Bug"
+  },
+    "Log Configuration": {
+    "prefix": "logconfig",
+    "body": [
+      "# Log Configuration",
+      "log.fileName = \"vmware.log\"",
+      "logging = \"TRUE\""
+    ],
+    "description": "Unit Log Configuration"
+  },
+    "Keyboard Configuration": {
+    "prefix": "keyboardconfig",
+    "body": [
+      "# Keyboard Configuration",
+      "keyboard.typematicMinDelay = \"250000\"",
+      "keyboard.typematicRate = \"30000\""
+    ],
+    "description": "Unit Keyboard Configuration"
+  }
+
+
+}

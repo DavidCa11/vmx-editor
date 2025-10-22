@@ -1,0 +1,88 @@
+{
+  "name": "vmx-editor",
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "version": "0.5.1",
+  "publisher": "DavidCa11",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "vmx",
+        "aliases": [
+          "VMX",
+          "vmx"
+        ],
+        "extensions": [
+          ".vmx"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "vmx",
+        "scopeName": "source.vmx",
+        "path": "./syntaxes/vmx.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "vmxEditor.insertBlock",
+        "title": "%cmd.insertBlock.title%",
+        "category": "VMX Editor"
+      },
+      {
+        "command": "vmxEditor.insertTimestamp",
+        "title": "%cmd.insertTimestamp.title%",
+        "category": "VMX Editor"
+      }
+    ]
+  },
+  "keybindings": [
+    {
+      "command": "vmxEditor.insertBlock",
+      "key": "ctrl+alt+i",
+      "when": "editorTextFocus && editorLangId == vmx"
+    }
+  ],
+  "files": [
+    "out/**",
+    "i18n/**",
+    "data/**"
+  ],
+  "localization": [
+    {
+      "languageId": "fr",
+      "translations": [
+        {
+          "id": "package",
+          "path": "./i18n/package.fr.json"
+        },
+        {
+          "id": "messages",
+          "path": "./i18n/messages.fr.json"
+        }
+      ]
+    }
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "@types/vscode": "^1.105.0",
+    "typescript": "^5.9.3",
+    "vscode-nls": "^5.2.0"
+  }
+}

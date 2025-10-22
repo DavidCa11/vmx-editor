@@ -1,0 +1,31 @@
+{
+    "vmxEditor.InvalidSyntax": "Syntaxe invalide. Format attendu: clé = \"valeur\".",
+    "vmxEditor.BooleanExpected": "Valeur booléenne attendue: TRUE ou FALSE.",
+    "vmxEditor.NumberExpected": "Valeur numérique attendue.",
+    "vmxEditor.ValueExpected": "Valeur attendue: {0}.",
+    "vmxEditor.InsertTimeStamp": "Insérer l'horodatage actuel.",
+    "vmxEditor.OpenForTimeStamp": "Ouvrir un fichier .vmx pour insérer un horodatage.",
+    "vmxEditor.TimeStampInserted": "Horodatage inséré en haut du fichier.",
+    "vmxEditor.ModifiedOn": "# Modifié le {0}.",
+    "vmxEditor.InsertFail": "Insertion d'un bloc raté.",
+    "vmxEditor.eInsertFail": "Insertion d'un bloc raté {0}",
+    "vmxEditor.InsertBlock": "Insérer un bloc de configuration.",
+    "vmxEditor.BlockInserted": "Bloc inséré : {0}.",
+    "vmxEditor.NoBlocks": "Pas de bloc VMX disponible.",
+    "vmxEditor.BlockNotFound": "Bloc selectioné non trouvé: {0}",
+    "vmxEditor.OpenForBlockInsert": "Ouvrir un fichier .vmx pour insérer un bloc.",
+    "vmxEditor.SelectBlockPlaceHolder": "Selectionnez un bloc VMX à insérer.",
+    "vmxEditor.BackupCreated": "# Backup crée ",
+    "vmxEditor.BackupFile": "backup",
+    "vmxEditor.BackupError": "Editeur VMX erreur de backup: ",
+    "vmxEditor.BackupFailed": "Création du Backup raté: {0}",
+    "vmxEditor.ExtensionActivated": "Extension Editeur VMX activée.",
+    "vmxEditor.ExtensionDeactivated": "Extension Editeur VMX désactivée.",
+    "vmxEditor.OpenVmxFirst": "Veuillez d'abord ouvrir un fichier .vmx.",
+    "vmxEditor.LoadError": "Erreur au chargement de {0}.",
+    "vmxEditor.LoadBlocksFail": "Erreur lors du chargement d'un bloc VMX.",
+    "vmxEditor.lLoadBlocksFail": "Erreur lors du chargement d'un bloc VMX {0}"
+
+
+
+}

@@ -1,0 +1,17 @@
+{
+  "scopeName": "source.vmx",
+  "patterns": [
+    {
+      "name": "keyword.vmx",
+      "match": "^[a-zA-Z0-9\\.\\-]+(?=\\s*=)"
+    },
+    {
+      "name": "string.vmx",
+      "match": "(?<=\\=\\s\\\")[^\"]+(?=\\\")"
+    },
+    {
+      "name": "comment.vmx",
+      "match": "#.*$"
+    }
+  ]
+}

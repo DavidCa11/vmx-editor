@@ -1,0 +1,6 @@
+{
+  "displayName": "VMX Editor",
+  "description": "Extension Visual Studio Code to edit VMware Workstation VMX files.",
+  "cmd.insertBlock.title": "VMX Editor: Insert Block",
+  "cmd.insertTimestamp.title": "VMX Editor: Insert a timestamp for saving."
+}

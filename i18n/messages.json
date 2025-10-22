@@ -1,0 +1,30 @@
+{
+    "vmxEditor.InvalidSyntax": "Invalid Syntax. Expected format: key = \"value\"",
+    "vmxEditor.BooleanExpected": "Boolean value expected: TRUE or FALSE",
+    "vmxEditor.NumberExpected": "Numeric value expected",
+    "vmxEditor.ValueExpected": "Value expected: {0}",
+    "vmxEditor.InsertTimeStamp": "Insert current timestamp",
+    "vmxEditor.OpenForTimeStamp": "Open a .vmx file to insert a timestamp.",
+    "vmxEditor.TimeStampInserted": "Timestamp inserted at top of file.",
+    "vmxEditor.ModifiedOn": "# Modified on {0}",
+    "vmxEditor.InsertFail": "Failed to insert block",
+    "vmxEditor.eInsertFail": "Failed to insert block {0}",
+    "vmxEditor.InsertBlock": "Insert configuration block",
+    "vmxEditor.BlockInserted": "Block inserted: {0}",
+    "vmxEditor.NoBlocks": "No VMX blocks available",
+    "vmxEditor.BlockNotFound": "Selected block not found: {0}",
+    "vmxEditor.OpenForBlockInsert": "Open a .vmx file to insert a block.",
+    "vmxEditor.SelectBlockPlaceHolder": "Select a VMX block to insert.",
+    "vmxEditor.BackupCreated": "# Backup created ",
+    "vmxEditor.BackupFile": "backup",
+    "vmxEditor.BackupError": "VMX Editor backup error: {0}",
+    "vmxEditor.BackupFailed": "Backup creation failed: {0}",
+    "vmxEditor.ExtensionActivated": "VMX Editor extension activated.",
+    "vmxEditor.ExtensionDeactivated": "VMX Editor extension deactivated.",
+    "vmxEditor.OpenVmxFirst": "Please open a .vmx file first.",   
+    "vmxEditor.LoadError": "Failed to load {0}",
+    "vmxEditor.LoadBlocksFail": "Failed to load VMX blocks",
+    "vmxEditor.lLoadBlocksFail": "Failed to load VMX blocks {0}"
+
+
+}
